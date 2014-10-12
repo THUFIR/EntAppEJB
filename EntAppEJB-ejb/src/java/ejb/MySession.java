@@ -2,7 +2,7 @@ package ejb;
 
 import javax.ejb.Stateless;
 
-@Stateless
+@Stateless//(mappedName="mySession")
 public class MySession implements EJBRemoteInterface {
 
     @Override
