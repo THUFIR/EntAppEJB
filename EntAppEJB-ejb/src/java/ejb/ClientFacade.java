@@ -6,6 +6,7 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 public class ClientFacade extends AbstractFacade<Client> implements ejb.ClientFacadeRemote {
+
     @PersistenceContext(unitName = "EntAppEJB-ejbPU")
     private EntityManager em;
 
@@ -17,5 +18,5 @@ public class ClientFacade extends AbstractFacade<Client> implements ejb.ClientFa
     public ClientFacade() {
         super(Client.class);
     }
-    
+
 }

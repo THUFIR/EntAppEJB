@@ -10,5 +10,5 @@
         <property name="URL" value="jdbc:mysql://localhost:3306/legacy?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="jndi/legacyEJB" object-type="user" pool-name="mysql_legacy_jdbcPool"/>
+    <jdbc-resource enabled="true" jndi-name="ejb_connection" object-type="user" pool-name="mysql_legacy_jdbcPool"/>
 </resources>
